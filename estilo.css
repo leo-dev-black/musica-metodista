@@ -29,7 +29,9 @@ header {
     background: linear-gradient(25deg,rgba(7, 153, 238, 0.521), rgba(255, 255, 255, 0.349));    
 }
 
-main > header > h1 > img.logo{
+
+
+.img_menu{
     margin-top: 6px;
     height: 40px;
     width: 40px;
@@ -67,15 +69,20 @@ main > div > p {
     width: 100px;
 }
 
-#tabela {
-    width: 500px;
+nav {
+    text-align: right;   
 }
+
+
+
+
+
 #instrumento {
-    display: flex;
-    flex-direction: column; /* imagens uma embaixo da outra */
-    gap: 10px; /* espaçamento entre imagens */
-    text-align: right;
+    
+ flex-direction: column;
+
 }
+
 
 header > div#inicio > h1 > img.logo :hover {
     border: 2px solid yellow;
