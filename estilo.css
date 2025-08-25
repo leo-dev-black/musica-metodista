@@ -5,8 +5,10 @@
     padding: 0px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Passion+One:wght@400;700;900&display=swap');
+
 main{
-    align-content: center;
+   text-align: center;
     position: relative;
     height: 100vh;
 }
@@ -29,15 +31,29 @@ header {
     background: linear-gradient(25deg,rgba(7, 153, 238, 0.521), rgba(255, 255, 255, 0.349));    
 }
 
+.logo {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
 
 
 .img_menu{
     margin-top: 6px;
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.555);
     box-sizing: border-box;
+}
+
+.img_menu:hover {
+    border: 6px solid rgba(41, 41, 214, 0.705);
+    transform: translate(-5px, -5px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.514);
+    transition: 0.3s;
+    height: 60px;
+    width: 60px;
 }
 
 main > div > p {
@@ -61,38 +77,60 @@ main > div > p {
     
 }
 
+#visao {
+    margin-top: 20px;
+    font-family: "Passion One", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+
+}
+
 #church {
-    
+    margin-top: 21px;
     text-align:right ;
     display: block;
-    height: 170px;
-    width: 100px;
+    height: 160px;
+    width: 120px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.527);
 }
+
+#church:hover {
+    height: 180px;
+    width: 140px;
+    border-radius: 10%;
+    box-shadow: 3px 3px 2px yellow;
+   
+}
+
+#pacote {
+    margin: 30px;    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* garante que fiquem alinhados pelo topo */
+    gap: 20px; /* espaço entre nav e tabela, opcional */
+}
+
+#tabela {
+    flex: 1;    
+    display: flex;
+    justify-content: center; /* centraliza na horizontal */
+}
+
 
 nav {
-    text-align: right;   
+    margin-left: auto;
 }
-
-
-
-
 
 #instrumento {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column; /* imagens em coluna */
+    gap: 10px;
     
- flex-direction: column;
-
 }
 
-
-header > div#inicio > h1 > img.logo :hover {
-    border: 2px solid yellow;
-    transform: translate(-5px, -5px);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.37);
-    transition: 0.3s;
-}
-
-main > header > h1 {
-   
+main > header > h1 {   
     font-family: Arial, Helvetica, sans-serif ;
     text-align: center;
     color: white;
