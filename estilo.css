@@ -8,17 +8,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Passion+One:wght@400;700;900&display=swap');
 
 main{
-    text-align: center;
-    position: relative;  
+    position: flex;  
     margin: 35px;
+    background-color:rgba(138, 138, 138, 0.856);
+    flex: auto;
 }
 
 body{
     background:linear-gradient(91deg, rgba(16, 16, 201, 0.664), rgba(223, 23, 23, 0.836));
-    text-align: center;
     position: relative;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     margin: 25px;
 }
 
@@ -29,9 +29,10 @@ table{
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    width: 450px;
-    height: 380px;
+    width: 400px;
+    height: 350px;
     flex:auto;
+    
 
 }
 
@@ -103,6 +104,8 @@ main > div > p {
 .abertura {
     display: flex;
     padding: 10px;
+    margin: 35px;
+    
     
 }
 
@@ -114,18 +117,20 @@ main > div > p {
     color: white;
 }
 
+#igreja {
+    text-align: center;
+}
+
 #church {
-    margin-top: 21px;
-    text-align:right ;
-    display: block;
-    height: 160px;
-    width: 120px;
+    text-align: center;
+    height: 200px;
+    width: 250px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.527);
 }
 
 #church:hover {
-    height: 180px;
-    width: 140px;
+    height: 220px;
+    width: 270px;
     border-radius: 10%;
     box-shadow: 3px 3px 2px yellow;   
 }
@@ -139,22 +144,20 @@ main > div > p {
 }
 
 #tabela {
-    flex: 1;    
-    display: flex;
-    justify-content: center; /* centraliza na horizontal */
+    text-align: center;
+    width: 370px;
 }
 
-
 nav {
-    margin: auto;
-    flex: auto;
+    margin: 35px;
+    
 }
 
 #instrumento {
-    margin-top: 25px;
-    display: flex;
+    
+    
     flex-direction: column; /* imagens em coluna */
-    gap: 10px;
+    
     
 }
 
