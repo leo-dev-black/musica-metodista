@@ -7,13 +7,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Passion+One:wght@400;700;900&display=swap');
 
-main{
+main {
     text-align: center;
     position: relative;  
 }
 
-body{
-    background:linear-gradient(91deg, rgba(16, 16, 201, 0.664), rgba(223, 23, 23, 0.836));
+body {
+    background: linear-gradient(91deg, rgba(16, 16, 201, 0.664), rgba(223, 23, 23, 0.836));
     text-align: center;
     position: relative;
     height: 100%;
@@ -21,16 +21,15 @@ body{
     margin: 25px;
 }
 
-main > nav > section > a > img.img_menu{
-height: 45px;
-width: 45px;
-border-radius: 50%;
-margin: 10px;
-box-shadow: 2px 2px 3.1px rgba(0, 0, 0, 0.425);
+/* ---- HEADER ---- */
+header {    
+    background: linear-gradient(25deg, rgba(7, 153, 238, 0.521), rgba(255, 255, 255, 0.349));    
 }
 
-header {    
-    background: linear-gradient(25deg,rgba(7, 153, 238, 0.521), rgba(255, 255, 255, 0.349));    
+main > header > h1 {   
+    font-family: Arial, Helvetica, sans-serif ;
+    text-align: center;
+    color: white;
 }
 
 .logo {
@@ -39,7 +38,16 @@ header {
     border-radius: 50%;
 }
 
-.img_menu{
+/* ---- MENU DE ÍCONES ---- */
+main > nav > section > a > img.img_menu {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin: 10px;
+    box-shadow: 2px 2px 3.1px rgba(0, 0, 0, 0.425);
+}
+
+.img_menu {
     margin-top: 6px;
     height: 50px;
     width: 50px;
@@ -57,13 +65,28 @@ header {
     width: 60px;
 }
 
+/* ---- VISÃO ---- */
+#visao {
+    margin-top: 20px;
+    font-family: "Passion One", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+
+/* ---- TEXTO E IMAGEM ABERTURA ---- */
+.abertura {
+    display: flex;
+    padding: 10px;
+}
+
 main > div > p {
-    text-indent: 3em; /*Distância no Parágrafo*/
+    text-indent: 3em;
     margin-bottom: 15px;
-    line-height: 1.3; /*Espaçamento entre linhas*/
+    line-height: 1.3;
     flex: 1;
-    align-items: flex-start; /* alinha no topo */
-    gap: 15px; /* espaço entre texto e imagem */
+    align-items: flex-start;
+    gap: 15px;
     padding: 15px;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
@@ -72,24 +95,9 @@ main > div > p {
     width: 400px;
 }
 
-.abertura {
-    display: flex;
-    padding: 10px;
-    
-}
-
-#visao {
-    margin-top: 20px;
-    font-family: "Passion One", sans-serif;
-    font-size: 18px;
-    text-align: center;
-    color: white;
-
-}
-
 #church {
     margin-top: 21px;
-    text-align:right ;
+    text-align: right;
     display: block;
     height: 160px;
     width: 120px;
@@ -101,23 +109,22 @@ main > div > p {
     width: 140px;
     border-radius: 10%;
     box-shadow: 3px 3px 2px yellow;
-   
 }
 
+/* ---- PACOTE (Tabela + Menu) ---- */
 #pacote {
     margin: 30px;    
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* garante que fiquem alinhados pelo topo */
-    gap: 20px; /* espaço entre nav e tabela, opcional */
+    align-items: flex-start;
+    gap: 20px;
 }
 
 #tabela {
     flex: 1;    
     display: flex;
-    justify-content: center; /* centraliza na horizontal */
+    justify-content: center;
 }
-
 
 nav {
     margin-left: auto;
@@ -126,13 +133,86 @@ nav {
 #instrumento {
     margin-top: 25px;
     display: flex;
-    flex-direction: column; /* imagens em coluna */
+    flex-direction: column;
     gap: 10px;
-    
 }
 
-main > header > h1 {   
-    font-family: Arial, Helvetica, sans-serif ;
-    text-align: center;
+/* ---- TABELA ---- */
+table {
+    margin: auto;
+    border-collapse: collapse;
+    font-size:14px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: white;
+}
+
+td, th {
+    border: 3px solid white;
+    padding: 10px;
+}
+
+thead {
+    background-color: rgb(88, 88, 88);
+    color: white;
+}
+
+caption {
+    font-family: "Passion One", sans-serif;
+    font-size: 28px;
+    color: black;
+}
+
+/* ---- RESPONSIVIDADE ---- */
+@media (max-width: 768px) {
+    body {
+        margin: 5px;
+    }
+
+    .abertura {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .abertura p {
+        width: 100%;
+        max-width: 100%;
+        text-align: justify;
+    }
+
+    #church {
+        margin-top: 15px;
+        width: 80%;
+        height: auto;
+    }
+
+    #pacote {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #tabela {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    nav {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    #instrumento {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .img_menu {
+        height: 40px;
+        width: 40px;
+    }
+
+    .img_menu:hover {
+        height: 50px;
+        width: 50px;
+    }
 }
