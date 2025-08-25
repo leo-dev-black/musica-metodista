@@ -8,7 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Passion+One:wght@400;700;900&display=swap');
 
 main{
-   text-align: center;
+    text-align: center;
     position: relative;
     height: 100%;
     width: 100%;
@@ -17,6 +17,11 @@ main{
 
 body{
     background:linear-gradient(91deg, rgba(16, 16, 201, 0.664), rgba(223, 23, 23, 0.836));
+    text-align: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 25px;
 }
 
 
