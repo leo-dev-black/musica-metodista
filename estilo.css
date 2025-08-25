@@ -9,10 +9,7 @@
 
 main{
     text-align: center;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    margin: 25px;
+    position: relative;  
 }
 
 body{
@@ -24,14 +21,12 @@ body{
     margin: 25px;
 }
 
-
 main > nav > section > a > img.img_menu{
 height: 45px;
 width: 45px;
 border-radius: 50%;
 margin: 10px;
 box-shadow: 2px 2px 3.1px rgba(0, 0, 0, 0.425);
-
 }
 
 header {    
@@ -43,7 +38,6 @@ header {
     width: 45px;
     border-radius: 50%;
 }
-
 
 .img_menu{
     margin-top: 6px;
