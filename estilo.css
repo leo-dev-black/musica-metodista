@@ -23,7 +23,6 @@ body{
 }
 
 
-
 table{
     border-collapse: collapse;
     text-align: center;
@@ -40,7 +39,6 @@ thead{
 caption {
     font-family: "Passion One", sans-serif;
     font-size: 28px;
-
 }
 
 td, th {
@@ -111,7 +109,6 @@ main > div > p {
     font-size: 18px;
     text-align: center;
     color: white;
-
 }
 
 #church {
@@ -127,8 +124,7 @@ main > div > p {
     height: 180px;
     width: 140px;
     border-radius: 10%;
-    box-shadow: 3px 3px 2px yellow;
-   
+    box-shadow: 3px 3px 2px yellow;   
 }
 
 #pacote {
@@ -147,7 +143,7 @@ main > div > p {
 
 
 nav {
-    margin-left: auto;
+   flex: auto;
 }
 
 #instrumento {
