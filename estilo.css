@@ -29,7 +29,10 @@ table{
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    width: 100%;
+    width: 450px;
+    height: 380px;
+    flex:auto;
+
 }
 
 thead{
@@ -143,7 +146,8 @@ main > div > p {
 
 
 nav {
-   flex: auto;
+    margin: auto;
+    flex: auto;
 }
 
 #instrumento {
