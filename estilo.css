@@ -8,10 +8,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Passion+One:wght@400;700;900&display=swap');
 
 main{
-    position: flex;  
+    width: 800px; 
     margin: 35px;
     background-color:rgba(138, 138, 138, 0.856);
-    flex: auto;
+    position: relative;
+    text-align: flex;
+    
 }
 
 body{
@@ -31,9 +33,6 @@ table{
     color: white;
     width: 400px;
     height: 350px;
-    flex:auto;
-    
-
 }
 
 thead{
@@ -104,9 +103,7 @@ main > div > p {
 .abertura {
     display: flex;
     padding: 10px;
-    margin: 35px;
-    
-    
+    margin: 35px;    
 }
 
 #visao {
@@ -136,29 +133,24 @@ main > div > p {
 }
 
 #pacote {
-    margin: 30px;    
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; /* garante que fiquem alinhados pelo topo */
-    gap: 20px; /* espaço entre nav e tabela, opcional */
+    margin: 25px;    
+    text-align: center;
+    
 }
 
 #tabela {
     text-align: center;
-    width: 370px;
+    width: 350px;
 }
 
 nav {
     margin: 35px;
+    text-align: center;
     
 }
 
-#instrumento {
-    
-    
-    flex-direction: column; /* imagens em coluna */
-    
-    
+#instrumento {     
+    flex-direction: column; /* imagens em coluna */   
 }
 
 main > header > h1 {   
